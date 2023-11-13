@@ -1,6 +1,6 @@
 mod datatypes;
 use crate::datatypes::{
-    derived::{functions, traits, user_defined},
+    derived::user_defined,
     primitive::{compound, scalar},
 };
 
@@ -23,40 +23,41 @@ fn main() {
     user_defined::run::structures();
     println!("\n\nEnums");
     user_defined::run::enumerators();
+    println!("\n\nTraits");
+    user_defined::run::traits_example();
+    println!("\nDerived Traits");
+    user_defined::run::derived_traits();
+    println!("\nReturning Traits with dyn");
+    user_defined::run::returning_traits_with_dyn();
+    println!("\nDrop");
+    user_defined::run::drop_example();
+    println!("\nIterators");
+    user_defined::run::iterators();
+    println!("\nSuper Traits");
+    user_defined::run::super_traits();
     // println!("\n\nFunctions");
     // functions::run::functions();
-    // println!("\n\nClosures");
-    // functions::run::closures();
-    // println!("\n\nCapture Modes");
-    // functions::run::capture_modes();
-    // println!("\n\nImmutable Borrows");
-    // functions::run::immutable_borrows();
-    // println!("\n\nCall Traits");
-    // functions::run::call_traits();
+    println!("\n\nClosures");
+    user_defined::run::closures();
+    println!("\n\nCapture Modes");
+    user_defined::run::capture_modes();
+    println!("\n\nImmutable Borrows");
+    user_defined::run::immutable_borrows();
+    println!("\n\nCall Traits");
+    user_defined::run::call_traits();
     println!("\n\nCapturing");
-    functions::run::capturing();
+    user_defined::run::capturing();
     println!("\n\nAs Input Parameters");
-    functions::run::as_input_parameters();
+    user_defined::run::as_input_parameters();
     println!("\n\nType Anonymity");
-    functions::run::type_anonymity();
+    user_defined::run::type_anonymity();
     println!("\n\nInput Functions");
-    functions::run::input_functions();
+    user_defined::run::input_functions();
     println!("\n\nOutput Parameters");
-    functions::run::as_output_parameters();
+    user_defined::run::as_output_parameters();
     println!("\n\nHigher Order Functions");
-    functions::run::higher_order_functions();
+    user_defined::run::higher_order_functions();
     println!("\n\nDiverging Functions");
-    functions::run::diverging_functions();
-    println!("\n\nTraits");
-    traits::run::traits_example();
-    println!("\nDerived Traits");
-    traits::run::derived_traits();
-    println!("\nReturning Traits with dyn");
-    traits::run::returning_traits_with_dyn();
-    println!("\nDrop");
-    traits::run::drop_example();
-    println!("\nIterators");
-    traits::run::iterators();
-    println!("\nSuper Traits");
-    traits::run::super_traits();
+    user_defined::run::diverging_functions();
+   
 }
