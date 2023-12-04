@@ -417,7 +417,8 @@ pub mod run {
         //}
     }
 
-    pub fn super_traits() {
+    pub fn super_traits(){
+        #![allow(dead_code)]
         trait Person {
             fn name(&self) -> String;
         }
@@ -447,10 +448,10 @@ pub mod run {
                 student.git_username()
             )
         }
-        
-        fn main() {}
+        fn main(){}
     }
 
+    
     pub fn capturing() {
         use std::mem;
 
@@ -772,6 +773,7 @@ pub mod run {
     }
 
     pub fn call_traits() {
+        #![allow(unused_assignments)]
         let add = |x, y| x + y;
 
         let mut x = add(5, 7);
@@ -779,5 +781,6 @@ pub mod run {
         type Binop = fn(i32, i32) -> i32;
         let bo: Binop = add;
         x = bo(5, 7);
+        println!("The value of x is {}",x)
     }
 }

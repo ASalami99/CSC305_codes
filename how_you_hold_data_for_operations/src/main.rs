@@ -1,13 +1,15 @@
 mod datatypes;
-use crate::datatypes::{
-    derived::user_defined,
-    primitive::{compound, scalar},
-};
+use datatypes::derived::pointers;
+
+// use crate::datatypes::{
+//     derived::{user_defined, pius_functions},
+//     primitive::{compound, scalar},
+// };
 
 fn main() {
     //println!("{}\n{}\n{}\n", user_defined::default_greeting(), compound::default_greeting(), scalar::default_greeting() );
     //println!("{}\n{}", compound::array_example(), compound::tuple_example());
-    println!("Primitive Data Types(Scalars)\nVariables");
+   /*  println!("Primitive Data Types(Scalars)\nVariables");
     scalar::run::variables();
     println!("\n\nLiterls");
     scalar::run::literals();
@@ -35,8 +37,6 @@ fn main() {
     user_defined::run::iterators();
     println!("\nSuper Traits");
     user_defined::run::super_traits();
-    // println!("\n\nFunctions");
-    // functions::run::functions();
     println!("\n\nClosures");
     user_defined::run::closures();
     println!("\n\nCapture Modes");
@@ -59,5 +59,12 @@ fn main() {
     user_defined::run::higher_order_functions();
     println!("\n\nDiverging Functions");
     user_defined::run::diverging_functions();
-   
+ */
+
+//  pius_functions::run();
+//  pius_functions::run2();
+//  pius_functions::run3();
+//  pius_functions::run4();
+
+ pointers::run();
 }
